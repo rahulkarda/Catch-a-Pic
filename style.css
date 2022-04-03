@@ -1,0 +1,123 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 10px;
+    background: black;
+    background-color: #3BC1AC;
+    background-image:
+    radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
+    background-size:100px 50px;
+  }
+  
+  .photobooth {
+    background: white;
+    max-width: 150rem;
+    margin: 2rem auto;
+    border-radius: 2px;
+  }
+  
+  /*clearfix*/
+  .photobooth:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .photo {
+    width: 100%;
+    float: left;
+  }
+  
+  .player {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width:200px;
+  }
+  
+  /*
+    Strip!
+  */
+  
+  .strip {
+    padding: 2rem;
+  }
+  
+  .strip img {
+    width: 100px;
+    overflow-x: scroll;
+    padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    background: white;
+  }
+  
+  .strip a:nth-child(5n+1) img { transform: rotate(10deg); }
+  .strip a:nth-child(5n+2) img { transform: rotate(-2deg); }
+  .strip a:nth-child(5n+3) img { transform: rotate(8deg); }
+  .strip a:nth-child(5n+4) img { transform: rotate(-11deg); }
+  .strip a:nth-child(5n+5) img { transform: rotate(12deg); }
+  
+ button{
+    padding: 10px 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    /* color: white; */
+    /* background-color: #bb63eb; */
+    /* border: 2px solid black; */
+    border-radius: 4px;
+    background: #ffc600;
+    box-shadow: 0 10px 6px -6px #777;
+} 
+.controls{
+    text-align: center;
+    padding: 30px;
+    /* background: url(https://images.unsplash.com/photo-1497005367839-6e852de72767?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGljdHVyZSUyMHBvaW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60); */
+    background-image:
+    radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
+    background-size:100px 50px;
+}
+.rgb{
+    display: none;
+}
+/* html{
+    background: white;
+} */
+footer{
+  text-align: center;
+  font-size: 25px;
+  flex-direction: column;
+  background-color: beige;
+  padding: 17px;
+}
+.fa-brands{
+  color: black;
+  font-size: 35px;
+}
+footer p{
+  margin-top: 1rem;
+  text-decoration: none;
+}
+#dev{
+  text-decoration: none;
+}
+#dev:hover{
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+.strip{
+  background-color: aliceblue;
+}
